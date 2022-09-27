@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "NotoSans";
+    src: url("/src/fonts/NotoSans-Regular.ttf");
+}
+
+:root {
+    font-size: 3rem;
+}
+
+div {
+    font-family: "NotoSans";
+}
