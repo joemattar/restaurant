@@ -35,7 +35,7 @@ const indexPageLoader = (function() {
     // Logo text div
     const logoTextDiv = document.createElement("div");
     logoTextDiv.classList.add("logo-text");
-    logoTextDiv.textContent = "LE ME3LA2 RESTO"
+    logoTextDiv.textContent = "LE ME3LA2"
     logoDiv.appendChild(logoTextDiv);
 
     // Menu div

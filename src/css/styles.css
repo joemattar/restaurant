@@ -8,20 +8,28 @@
     src: url("/src/fonts/BloodlustExpanded-Ao5m.ttf");
 }
 
+@font-face {
+    font-family: "Redcap";
+    src: url("/src/fonts/Redcap.ttf");
+}
+
 :root {
     --color-header: #ffbc0c;
     --color-header-logo-text: #f54235;
     --color-header-logo-text-hover: #bf1c1d;
     --color-main: red;
     --color-footer: blue;
-    --font-logo-text: "Bloodlust";
-    --font-main: "NotoSansRegular";
+    --font-main: "Bloodlust";
+    --font-main-alt: "Redcap";
 
-    font-family: var(--font-main);
 }
 
 body {
     background-color: var(--color-header);
+
+    font-family: var(--font-main);
+    color: var(--color-header-logo-text);
+    font-size: 2rem;
 
     margin: 0;
     padding: 0;
@@ -35,6 +43,11 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--color-header-logo-text);
+}
+
+a:hover {
+    color: var(--color-header-logo-text-hover);
 }
 
 #content {
@@ -49,7 +62,6 @@ a {
 
 header {
     color: var(--color-header-logo-text);
-    font-family: var(--font-logo-text);
     
     display: flex;
     justify-content: space-between;
@@ -78,30 +90,39 @@ header .menu {
     gap: 1rem;
 }
 
-header .menu a {
-    color: var(--color-header-logo-text);
-}
-
-header .menu a:hover {
-    color: var(--color-header-logo-text-hover);
-}
-
 #main {
+    margin: 1rem 0;
 
     /* TO REVIEW */
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    gap: 1rem;
+
 }
 
-#main img {
+#main .main-img {
+    border-radius: 1rem;
     width: 100%;
+}
+
+#main .alt-font {
+    font-family: var(--font-main-alt);
+    font-size: 1.5rem;
+}
+
+#main .main-attribution-img {
+    border-radius: 1rem;
+    width: 70%;
+}
+
+#main .attribution {
+    font-size: 2rem;
 }
 
 footer {
     color: var(--color-header-logo-text);
-    font-family: var(--font-logo-text);
     font-size: 1.5rem;
 
     display: flex;
@@ -111,14 +132,8 @@ footer {
 }
 
 footer a {
-    color: var(--color-header-logo-text);
-
     display: grid;
     place-content: center;
-}
-
-footer a:hover {
-    color: var(--color-header-logo-text-hover);
 }
 
 footer img {
