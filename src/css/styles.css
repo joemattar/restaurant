@@ -9,8 +9,9 @@
 }
 
 :root {
-    --color-header: yellow;
+    --color-header: #ffbc0c;
     --color-header-logo-text: #f54235;
+    --color-header-logo-text-hover: #bf1c1d;
     --color-main: red;
     --color-footer: blue;
     --font-logo-text: "Bloodlust";
@@ -20,39 +21,77 @@
 }
 
 body {
+    background-color: var(--color-header);
+
     margin: 0;
     padding: 0;
 
     height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 #content {
     height: 100%;
+    width: min(100vw, 1000px);
+
+    padding: 0 1rem;
 
     display: grid;
-    grid-template-rows: 80px 1fr 60px;
+    grid-template-rows: 5rem 1fr 4rem;
 }
 
 header {
-    background-color: var(--color-header);
+    color: var(--color-header-logo-text);
+    font-family: var(--font-logo-text);
     
     display: flex;
-
+    justify-content: space-between;
     align-items: center;
 }
 
-header .logo-img img {
-    height: 60px;
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-header .logo-text {
+header .logo .logo-img img {
+    height: 3rem;
+}
+
+header .logo .logo-text {
+
+    font-size: 3rem;
+}
+
+header .menu {
+    font-size: 2rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+header .menu a {
     color: var(--color-header-logo-text);
-    font-family: var(--font-logo-text);
-    font-size: 4rem;
+}
+
+header .menu a:hover {
+    color: var(--color-header-logo-text-hover);
 }
 
 #main {
-    background-color: var(--color-main);
+
+    /* TO REVIEW */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -61,8 +100,29 @@ header .logo-text {
 }
 
 footer {
-    background-color: var(--color-footer);
+    color: var(--color-header-logo-text);
+    font-family: var(--font-logo-text);
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer a {
+    color: var(--color-header-logo-text);
 
     display: grid;
     place-content: center;
 }
+
+footer a:hover {
+    color: var(--color-header-logo-text-hover);
+}
+
+footer img {
+    height: 1.2rem;
+}
+
+
