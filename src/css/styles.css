@@ -1,12 +1,68 @@
 @font-face {
-    font-family: "NotoSans";
+    font-family: "NotoSansRegular";
     src: url("/src/fonts/NotoSans-Regular.ttf");
 }
 
-:root {
-    font-size: 3rem;
+@font-face {
+    font-family: "Bloodlust";
+    src: url("/src/fonts/BloodlustExpanded-Ao5m.ttf");
 }
 
-div {
-    font-family: "NotoSans";
+:root {
+    --color-header: yellow;
+    --color-header-logo-text: #f54235;
+    --color-main: red;
+    --color-footer: blue;
+    --font-logo-text: "Bloodlust";
+    --font-main: "NotoSansRegular";
+
+    font-family: var(--font-main);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+}
+
+#content {
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 80px 1fr 60px;
+}
+
+header {
+    background-color: var(--color-header);
+    
+    display: flex;
+
+    align-items: center;
+}
+
+header .logo-img img {
+    height: 60px;
+}
+
+header .logo-text {
+    color: var(--color-header-logo-text);
+    font-family: var(--font-logo-text);
+    font-size: 4rem;
+}
+
+#main {
+    background-color: var(--color-main);
+
+}
+
+#main img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--color-footer);
+
+    display: grid;
+    place-content: center;
 }
