@@ -95,5 +95,4 @@ const indexPageLoader = (function() {
     footer.appendChild(attributionsA);
     attributionsA.addEventListener("click", attributionsContentLoader)
 
-
 })();
