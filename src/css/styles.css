@@ -1,9 +1,4 @@
 @font-face {
-    font-family: "NotoSansRegular";
-    src: url("/src/fonts/NotoSans-Regular.ttf");
-}
-
-@font-face {
     font-family: "Bloodlust";
     src: url("/src/fonts/BloodlustExpanded-Ao5m.ttf");
 }
