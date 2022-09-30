@@ -1,4 +1,5 @@
 import "./css/styles.css";
+import "./images/butchering.png"
 import { mainContentLoader, mainContentInitialLoader } from "../src/main.js";
 import { menuContentLoader } from "../src/menu.js"
 import { contactContentLoader } from "../src/contact.js";
