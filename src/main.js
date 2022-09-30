@@ -1,3 +1,5 @@
+import bbq_dish from "./images/bbq_dish.jpg";
+
 function mainContentLoader() {
     const mainDiv = document.querySelector("#main");
     mainDiv.textContent = "";
@@ -7,7 +9,7 @@ function mainContentLoader() {
     // Main image
     const mainImg = document.createElement("img");
     mainImg.classList.add("main-img");
-    mainImg.src = "../src/images/bbq-dish.jpg";
+    mainImg.src = bbq_dish;
     mainImg.alt = "Main Image";
     mainDiv.appendChild(mainImg);
 

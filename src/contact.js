@@ -1,3 +1,5 @@
+import location from "./images/location.png";
+
 function contactContentLoader() {
     const mainDiv = document.querySelector("#main");
     mainDiv.textContent = "";
@@ -23,7 +25,7 @@ function contactContentLoader() {
     menuItemText2.textContent = "ADDRESS: 699 St Clair Ave W, Toronto, ON M6C 1B2";
     menuItemDiv1.appendChild(menuItemText2);
     const menuItemImg1 = document.createElement("img");
-    menuItemImg1.src = "../src/images/location.png";
+    menuItemImg1.src = location;
     menuItemImg1.alt = "Map Location";
     menuItemDiv1.appendChild(menuItemImg1);
     

@@ -1,5 +1,6 @@
 import "./css/styles.css";
-import "./images/butchering.png"
+import logo from "./images/butchering.png";
+import github from "./images/github_logo.png"
 import { mainContentLoader, mainContentInitialLoader } from "../src/main.js";
 import { menuContentLoader } from "../src/menu.js"
 import { contactContentLoader } from "../src/contact.js";
@@ -29,7 +30,7 @@ const indexPageLoader = (function() {
 
     // Logo img
     const logoImg = document.createElement("img");
-    logoImg.src = "../src/images/butchering.png";
+    logoImg.src = logo;
     logoImg.alt = "Le Me3la2 Logo";
     logoImgDiv.appendChild(logoImg);
 
@@ -87,7 +88,7 @@ const indexPageLoader = (function() {
 
     // Footer img element
     const footerImg = document.createElement("img");
-    footerImg.src = "../src/images/github_logo.png";
+    footerImg.src = github;
     footerA.appendChild(footerImg);
 
     const attributionsA = document.createElement("a");

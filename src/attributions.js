@@ -1,3 +1,5 @@
+import rodney_scott from "./images/rodney_scott.jpg";
+
 function attributionsContentLoader() {
     const mainDiv = document.querySelector("#main");
     mainDiv.textContent = "";
@@ -7,7 +9,7 @@ function attributionsContentLoader() {
     // Main attribution image
     const mainAttributionImg = document.createElement("img");
     mainAttributionImg.classList.add("main-attribution-img");
-    mainAttributionImg.src = "../src/images/rodney_scott.jpg";
+    mainAttributionImg.src = rodney_scott;
     mainAttributionImg.alt = "Chef Rodney Scott BBQing";
     mainDiv.appendChild(mainAttributionImg);
 
